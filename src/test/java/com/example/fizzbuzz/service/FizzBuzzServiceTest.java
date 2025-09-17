@@ -1,9 +1,9 @@
 package com.example.fizzbuzz.service;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Description;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzServiceTest {
 
@@ -14,6 +14,15 @@ public class FizzBuzzServiceTest {
     String actual = target.fizzbuzz("1");
 
     assertEquals("1", actual);
+  }
+  
+  @Test
+  @Description("2を渡したら2が返ってくること")
+  public void test02() {
+    FizzBuzzService target = new FizzBuzzService();
+    String actual = target.fizzbuzz("2");
+
+    assertEquals("2", actual);
   }
 
 }
