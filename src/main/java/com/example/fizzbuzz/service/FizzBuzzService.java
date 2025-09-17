@@ -2,6 +2,10 @@ package com.example.fizzbuzz.service;
 
 public class FizzBuzzService {
   public String fizzbuzz(String number) {
-    return number;
+    if (!number.equals("3")) {
+      return number;
+    }
+
+    return "fizz";
   }
 }
