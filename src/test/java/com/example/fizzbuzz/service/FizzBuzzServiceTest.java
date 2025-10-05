@@ -52,4 +52,13 @@ public class FizzBuzzServiceTest {
     assertEquals("buzz", actual);
   }
 
+  @Test
+  @Description("6を渡したらfizzが返ってくること")
+  
+  public void test06() {
+	    FizzBuzzService target = new FizzBuzzService();
+	    String actual = target.fizzbuzz("6");
+
+	    assertEquals("fizz", actual);
+	  }
 }
