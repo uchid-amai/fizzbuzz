@@ -1,9 +1,9 @@
 package com.example.fizzbuzz.service;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Description;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzServiceTest {
 

@@ -6,7 +6,7 @@ public class FizzBuzzService {
       return "buzz";
     }
 
-    if (!number.equals("3") && !number.equals("6")&& !number.equals("9")) {
+    if (Integer.parseInt(number) % 3 != 0) {
       return number;
     }
 
