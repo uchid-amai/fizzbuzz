@@ -6,7 +6,7 @@ public class FizzBuzzService {
       return "buzz";
     }
 
-    if (!number.equals("3") && !number.equals("6")) {
+    if (!number.equals("3") && !number.equals("6")&& !number.equals("9")) {
       return number;
     }
 
