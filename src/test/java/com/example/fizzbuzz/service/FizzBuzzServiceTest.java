@@ -51,5 +51,14 @@ public class FizzBuzzServiceTest {
 
     assertEquals("buzz", actual);
   }
+
+  @Test
+  @Description("15を渡したらfizzbuzzが返ってくること")
+  public void test05() {
+    FizzBuzzService target = new FizzBuzzService();
+    String actual = target.fizzbuzz("15");
+
+    assertEquals("fizzbuzz", actual);
+  }
 }
 

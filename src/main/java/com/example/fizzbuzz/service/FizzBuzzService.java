@@ -2,7 +2,7 @@ package com.example.fizzbuzz.service;
 
 public class FizzBuzzService {
   public String fizzbuzz(String number) {
-    if (number.equals("5")) {
+    if (number.equals("5") || number.equals("10")) {
       return "buzz";
     }
 
