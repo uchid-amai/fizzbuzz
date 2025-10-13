@@ -35,22 +35,18 @@ public class FizzBuzzServiceTest {
 
 
   @Test
-  @Description("5を渡したらbuzzが返ってくること")
+  @Description("5の倍数を渡したらbuzzが返ってくること")
   public void test03() {
     FizzBuzzService target = new FizzBuzzService();
-    String actual = target.fizzbuzz("5");
+    String actual5 = target.fizzbuzz("5");
+    String actual10 = target.fizzbuzz("10");
+    String actual20 = target.fizzbuzz("20");
 
-    assertEquals("buzz", actual);
+    assertEquals("buzz", actual5);
+    assertEquals("buzz", actual10);
+    assertEquals("buzz", actual20);
   }
   
-  @Test
-  @Description("10を渡したらbuzzが返ってくること")
-  public void test04() {
-    FizzBuzzService target = new FizzBuzzService();
-    String actual = target.fizzbuzz("10");
-
-    assertEquals("buzz", actual);
-  }
 
   @Test
   @Description("15を渡したらfizzbuzzが返ってくること")
@@ -61,13 +57,5 @@ public class FizzBuzzServiceTest {
     assertEquals("fizzbuzz", actual);
   }
   
-  @Test
-  @Description("20を渡したらbuzzが返ってくること")
-  public void test06() {
-    FizzBuzzService target = new FizzBuzzService();
-    String actual = target.fizzbuzz("20");
-
-    assertEquals("buzz", actual);
-  }
 }
 

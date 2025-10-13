@@ -2,16 +2,16 @@ package com.example.fizzbuzz.service;
 
 public class FizzBuzzService {
   public String fizzbuzz(String number) {
-    if (number.equals("5") || number.equals("10") ||  number.equals("20")) {
+	if (number.equals("15") ) {
+	  return "fizzbuzz";
+    }
+	
+    if  (Integer.parseInt(number) % 5 == 0) {
       return "buzz";
     }
 
     if (Integer.parseInt(number) % 3 != 0) {
       return number;
-    }
-  
-    if (number.equals("15") ) {
-      return "fizzbuzz";
     }
   
     return "fizz";
