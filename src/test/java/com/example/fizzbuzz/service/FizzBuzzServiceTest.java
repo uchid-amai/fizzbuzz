@@ -46,7 +46,6 @@ public class FizzBuzzServiceTest {
     assertEquals("buzz", actual10);
     assertEquals("buzz", actual20);
   }
-  
 
   @Test
   @Description("15を渡したらfizzbuzzが返ってくること")
@@ -56,7 +55,6 @@ public class FizzBuzzServiceTest {
 
     assertEquals("fizzbuzz", actual);
   }
-  
 
   @Test
   @Description("30を渡したらfizzbuzzが返ってくること")
@@ -65,5 +63,14 @@ public class FizzBuzzServiceTest {
     String actual = target.fizzbuzz("30");
 
     assertEquals("fizzbuzz", actual);
-}
+  }
+
+  @Test
+  @Description("45を渡したらfizzbuzzが返ってくること")
+  public void test07() {
+    FizzBuzzService target = new FizzBuzzService();
+    String actual = target.fizzbuzz("45");
+
+    assertEquals("fizzbuzz", actual);
+  }
 }
